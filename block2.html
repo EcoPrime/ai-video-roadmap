@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блок 2 — Short-form Спеціалізація</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TOP MENU -->
+<div style="margin-bottom: 25px;">
+    <a class="button" href="index.html">🏠 Головна</a>
+    <a class="button" href="roadmap.html">📄 Повний Roadmap</a>
+    <a class="button" href="block1.html">⬅ Блок 1</a>
+    <a class="button" href="block3.html">➡ Блок 3</a>
+</div>
+
+<h1>БЛОК 2 — Short-form Спеціалізація</h1>
+
+<div class="section">
+     <h1>
+            <a class="smallbtn" href="https://www.youtube.com/watch?v=58fc2v__VWU" target="_blank">▶ УКРОК 2  <br>  Як правильно монтувати відео
+
+</a>
+
+    </h1>
+<h2>🎯 Ціль</h2>
+<p>
+Навчитися робити відео, яке утримує увагу та виглядає як сучасний short-form контент.
+Відео має “чіпляти” з перших 2 секунд.
+</p>
+</div>
+
+<div class="section">
+<h2>🛠 Що потрібно освоїти</h2>
+<ul>
+<li>Hook (1–3 секунди, які зупиняють скролл)</li>
+<li>Jump Cuts (динамічна нарізка)</li>
+<li>Retention монтаж (часта зміна плану)</li>
+<li>TikTok-style субтитри</li>
+<li>Problem → Solution → CTA</li>
+<li>Ритм + музика + SFX</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📌 Практичні завдання</h2>
+<ul>
+<li>Зробити 3 ролики з різними Hook</li>
+<li>Зробити 1 рекламний ролик (Problem → Solution → CTA)</li>
+<li>Зробити 1 UGC-стиль відео</li>
+</ul>
+</div>
+
+<!-- GPT HELPER -->
+<div class="section">
+<h2>🤖 GPT-помічник (Hooks & Ads)</h2>
+
+<p style="opacity:0.8; margin-top:0;">
+Тут GPT допомагає придумувати hook, структуру реклами та субтитри.
+</p>
+
+<button class="button" onclick="toggle('gpt2')">Показати пораду</button>
+
+<div id="gpt2" style="display:none; margin-top:15px; background:#111; border:1px solid #2a2a2a; padding:15px; border-radius:12px;">
+
+  <div style="color:#00ffcc; font-weight:bold; margin-bottom:10px;">
+    Якщо не знаєш, як зробити відео цікавішим:
+  </div>
+
+  <div style="opacity:0.9;">
+    1) Спочатку думай не “як красиво змонтувати”, а “що зацікавить людину”.<br>
+    2) Формула: сильний біль → рішення → доказ → CTA.<br>
+    3) Перша фраза = найважливіша частина всього відео.
+  </div>
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <button class="smallbtn" onclick="copyText('prompt2')">📋 Скопіювати промпт</button>
+    <a class="smallbtn" href="https://chat.openai.com/" target="_blank">🔗 Відкрити ChatGPT</a>
+    <a class="smallbtn" href="#" target="_blank">▶ Урок (додаси посилання)</a>
+  </div>
+
+  <pre id="prompt2" style="white-space:pre-wrap; background:#0d0d0d; border:1px solid #2a2a2a; padding:12px; border-radius:12px; margin:12px 0 0;">
+Ти — експерт з short-form реклами (TikTok / Reels).
+
+Ніша:
+Цільова аудиторія:
+Продукт / послуга:
+
+Зроби:
+1) 5 потужних hook (до 10 слів)
+2) Повний сценарій до 30 сек (Problem → Solution → Proof → CTA)
+3) Текст субтитрів (динамічний стиль)
+4) Ідею монтажу (де різати, коли змінювати кадр)
+
+Коротко, чітко, без води.
+  </pre>
+
+</div>
+</div>
+
+<div class="section">
+<h2>✅ Результат</h2>
+<p>
+5 рекламних роликів для різних ніш.
+Відео виглядає як сучасний TikTok / Reels контент.
+</p>
+</div>
+
+<div style="margin-top:30px;">
+    <a class="button" href="index.html">← Назад на головну</a>
+</div>
+
+<div class="footer">
+AI Video Roadmap • 2026
+</div>
+
+</div>
+
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+function copyText(id){
+  const el = document.getElementById(id);
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    alert("Промпт скопійовано ✅");
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    color: #00ffcc;
+}
+
+h2 {
+    color: #00ffcc;
+}
+
+.section {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #00ffcc;
+    color: black;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    opacity: 0.5;
+}
+.gpt-box{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:14px;
+  border-radius:12px;
+  margin-top:12px;
+}
+.gpt-title{
+  color:#00ffcc;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+.gpt-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.smallbtn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #2a2a2a;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+}
+.smallbtn:hover{
+  border-color:#00ffcc;
+  color:#00ffcc;
+}
+.hidden{display:none;}
+pre.prompt{
+  white-space:pre-wrap;
+  background:#0d0d0d;
+  border:1px solid #2a2a2a;
+  padding:12px;
+  border-radius:12px;
+  margin:10px 0 0;
+}
+
+
+.smallbtn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid #2a2a2a;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+  text-decoration:none;
+}
+.smallbtn:hover{
+  border-color:#00ffcc;
+  color:#00ffcc;
+}

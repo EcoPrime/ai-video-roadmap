@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блок 1 — База DaVinci</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- TOP MENU -->
+<div style="margin-bottom: 25px;">
+    <a class="button" href="index.html">🏠 Головна</a>
+    <a class="button" href="roadmap.html">📄 Повний Roadmap</a>
+    <a class="button" href="block2.html">➡ Блок 2</a>
+</div>
+
+<h1>БЛОК 1 — База DaVinci</h1>
+
+<div class="section">
+    <h1>
+            <a class="smallbtn" href="https://www.youtube.com/watch?v=8yfezdFamA0" target="_blank">▶ УКРОК 1  <br>  ШВИДКИЙ старт в Davinci Resolve.
+
+</a>
+
+    </h1>
+<h2>🎯 Ціль</h2>
+<p>
+Навчитися впевнено монтувати короткі відео без страху перед програмою.
+Монтаж має стати автоматичним процесом.
+</p>
+</div>
+
+<div class="section">
+<h2>🛠 Що потрібно освоїти</h2>
+<ul>
+<li>Інтерфейс DaVinci (Cut / Edit / Deliver)</li>
+<li>Імпорт медіа та організація папок</li>
+<li>Гарячі клавіші (cut, ripple delete, blade)</li>
+<li>A-Roll монтаж</li>
+<li>B-Roll накладки</li>
+<li>Inspector (Zoom, Position, Speed)</li>
+<li>Text+ титри</li>
+<li>Експорт 9:16, 1080x1920, 30fps</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📌 Практичне завдання</h2>
+<ul>
+<li>Змонтувати 3 тестових ролики (будь-який матеріал)</li>
+<li>Зробити 1 ролик повністю з титрами</li>
+<li>Зробити 1 ролик зі Speed Ramp</li>
+</ul>
+</div>
+
+<!-- GPT HELPER -->
+<div class="section">
+<h2>🤖 GPT-помічник (DaVinci)</h2>
+
+<p style="opacity:0.8; margin-top:0;">
+Натисни кнопку — і отримаєш підказку + готовий промпт, який можна скопіювати й вставити в ChatGPT.
+</p>
+
+<button class="button" onclick="toggle('gpt1')">Показати пораду</button>
+
+<div id="gpt1" style="display:none; margin-top:15px; background:#111; border:1px solid #2a2a2a; padding:15px; border-radius:12px;">
+
+  <div style="color:#00ffcc; font-weight:bold; margin-bottom:10px;">
+    Якщо застряг у DaVinci — роби так:
+  </div>
+
+  <div style="opacity:0.9;">
+    1) Сформулюй проблему одним реченням (що саме не виходить).<br>
+    2) Зроби 1 скрін екрана (таймлайн + Inspector видно).<br>
+    3) Я відповім клік-за-кліком (2–7 кроків), без води.<br><br>
+    <strong>Правило:</strong> краще 1 маленька задача (наприклад “анімувати текст”), ніж “як монтувати взагалі”.
+  </div>
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
+    <button class="smallbtn" onclick="copyText('prompt1')">📋 Скопіювати промпт</button>
+    <a class="smallbtn" href="https://chat.openai.com/" target="_blank">🔗 Відкрити ChatGPT</a>
+    <a class="smallbtn" href="https://www.youtube.com/watch?v=nJqUkBSetSw&list=PL1552Kus-60bZTTmbe6HPBmovY42HkMpc&index=6" target="_blank">▶ Урок (додаси посилання)</a>
+  </div>
+
+  <pre id="prompt1" class="prompt" style="white-space:pre-wrap; background:#0d0d0d; border:1px solid #2a2a2a; padding:12px; border-radius:12px; margin:12px 0 0;">
+Ти — мій наставник по DaVinci Resolve 20 (short-form 9:16).
+Я роблю Блок 1 “База”.
+
+Ось 1 скрін екрана. Опиши клік-за-кліком, що натискати, щоб отримати результат.
+Проблема (1 речення):
+Що я хотів зробити:
+Що натиснув:
+Що вийшло не так:
+
+Відповідь дай:
+1) 3–7 кроків “куди натиснути”
+2) Типові помилки (1–2)
+3) Як перевірити, що зроблено правильно
+  </pre>
+
+</div>
+</div>
+
+<div class="section">
+<h2>✅ Результат</h2>
+<p>
+10 змонтованих коротких роликів.
+Монтаж без гуглення кожної кнопки.
+</p>
+</div>
+
+<div style="margin-top:30px;">
+    <a class="button" href="index.html">← Назад на головну</a>
+</div>
+
+<div class="footer">
+AI Video Roadmap • 2026
+</div>
+
+</div>
+
+<!-- JS (локально, без API) -->
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+function copyText(id){
+  const el = document.getElementById(id);
+  if(!el) return;
+  const text = el.innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    alert("Промпт скопійовано ✅");
+  }).catch(()=>{
+    // fallback
+    const range = document.createRange();
+    range.selectNode(el);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    alert("Не вдалося скопіювати автоматично. Виділив текст — натисни Ctrl+C ✅");
+  });
+}
+</script>
+
+</body>
+</html>

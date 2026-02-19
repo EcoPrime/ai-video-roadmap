@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Short-Form Video Roadmap</title>
+<style>
+  :root{
+    --bg:#0f0f0f; --card:#1a1a1a; --text:#ffffff; --muted:#bdbdbd;
+    --accent:#00ffcc; --accent2:#14b8a6; --border:#2a2a2a;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family: Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    margin:0;
+    padding:24px;
+    line-height:1.45;
+  }
+  .container{max-width:980px; margin:0 auto;}
+  .topbar{
+    position:sticky; top:0; z-index:10;
+    background:rgba(15,15,15,0.92);
+    backdrop-filter: blur(8px);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:12px 14px;
+    margin-bottom:18px;
+  }
+  .nav{
+    display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+  }
+  .nav-left{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+  .nav a{
+    color:var(--text);
+    text-decoration:none;
+    border:1px solid var(--border);
+    padding:8px 10px;
+    border-radius:12px;
+    font-size:14px;
+    opacity:0.95;
+  }
+  .nav a:hover{border-color:var(--accent); color:var(--accent);}
+  h1{margin:12px 0 6px; color:var(--accent);}
+  .subtitle{color:var(--muted); margin:0 0 18px;}
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:16px;
+  }
+  .section{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:18px;
+    border-radius:16px;
+  }
+  .section h2{
+    margin:0 0 10px;
+    color:var(--accent);
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  .badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#000;
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:bold;
+  }
+  .note{
+    background:#111;
+    border:1px dashed #2e2e2e;
+    padding:12px;
+    border-radius:12px;
+    color:var(--muted);
+    margin:10px 0 14px;
+  }
+  ul.checklist{margin:0; padding-left:18px;}
+  ul.checklist li{margin:8px 0;}
+  .row{
+    display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;
+  }
+  .btn{
+    display:inline-block;
+    background:transparent;
+    border:1px solid var(--accent2);
+    color:var(--text);
+    padding:10px 12px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:14px;
+  }
+  .btn:hover{border-color:var(--accent); color:var(--accent);}
+  .links{
+    margin-top:12px;
+    padding-top:12px;
+    border-top:1px solid var(--border);
+  }
+  .links h3{margin:0 0 8px; font-size:14px; color:var(--muted);}
+  .linkitem{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:10px 12px;
+    margin-bottom:8px;
+    color:var(--muted);
+  }
+  .hint{color:var(--muted); font-size:13px; margin-top:10px;}
+  .footer{
+    text-align:center;
+    color:var(--muted);
+    opacity:0.7;
+    margin:28px 0 10px;
+  }
+  .anchor{scroll-margin-top:90px;}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- TOP NAV -->
+  <div class="topbar">
+    <div class="nav">
+      <div class="nav-left">
+        <a href="#block1">Блок 1: База</a>
+        <a href="#block2">Блок 2: Short-form</a>
+        <a href="#block3">Блок 3: AI</a>
+        <a href="#block4">Блок 4: Звук+Color</a>
+        <a href="#block5">Блок 5: Портфоліо</a>
+      </div>
+      <div class="nav-right">
+        <a href="#rules">Правила</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>AI Short-Form Video Specialist Roadmap</h1>
+  <p class="subtitle">
+    Ціль: remote робота (Short-form Video Editor / Creative Producer). Працюємо як команда, але кожен вміє повний цикл.
+  </p>
+
+  <!-- RULES -->
+  <div id="rules" class="section anchor">
+    <h2>Правила, щоб не збиватися <span class="badge">Must</span></h2>
+    <div class="note">
+      <strong>1)</strong> Кожен проходить всі блоки (повний цикл).<br/>
+      <strong>2)</strong> Кожен блок завершується результатом (готові відео), а не “подивилися урок”.<br/>
+      <strong>3)</strong> Якщо застрягли — робимо простіше, але не зупиняємось.
+    </div>
+    <ul class="checklist">
+      <li>Стандартний формат: 9:16, 1080×1920, 30fps</li>
+      <li>Стандарт треків: V1 відео, V2 B-roll/AI, V3 текст; A1 голос, A2 музика, A3 SFX</li>
+      <li>Кожен ролик: Hook 1–3 сек + ритм + субтитри + фінальний експорт</li>
+    </ul>
+  </div>
+
+  <!-- BLOCK 1 -->
+  <div id="block1" class="section anchor">
+    <h2>БЛОК 1 — База DaVinci <span class="badge">Обов’язково</span></h2>
+    <div class="note">
+      Це фундамент. Ваша задача — щоб монтаж “не болів”: імпорт → таймлайн → текст → звук → експорт.
+    </div>
+    <ul class="checklist">
+      <li>Інтерфейс DaVinci (Cut/Edit/Deliver) + терміни монтажера</li>
+      <li>Імпорт медіа + організація папок/бинів</li>
+      <li>Гарячі клавіші (мінімум: cut, ripple delete, play, blade)</li>
+      <li>A-Roll: нарізка + Jump cuts</li>
+      <li>B-Roll: накладки, zoom, позиція</li>
+      <li>Inspector: Zoom/Position/Rotation + keyframes</li>
+      <li>Титри: Text+ (базова анімація)</li>
+      <li>Експорт під Shorts/Reels</li>
+    </ul>
+    <p class="hint"><strong>Результат блоку:</strong> 10 коротких роликів (навіть з простих матеріалів).</p>
+
+    <div class="row">
+      <a class="btn" href="#block2">Далі → Блок 2</a>
+      <a class="btn" href="#rules">↑ До правил</a>
+    </div>
+
+    <div class="links">
+      <h3>Посилання та нотатки (додасте сюди)</h3>
+      <div class="linkitem">🔗 Урок / стаття / ваша нотатка по Блоку 1 — (вставити посилання)</div>
+      <div class="linkitem">📝 Пам’ятка: “Експорт 9:16, 30fps, H.264” — (вставити текст/посилання)</div>
+    </div>
+  </div>
+
+  <!-- BLOCK 2 -->
+  <div id="block2" class="section anchor">
+    <h2>БЛОК 2 — Short-form Спеціалізація</h2>
+    <div class="note">
+      Це вже “ринок”. Тут ми вчимося робити відео, яке тримає увагу і виглядає як реклама/контент для бізнесу.
+    </div>
+    <ul class="checklist">
+      <li>Hook 1–3 секунди (гачок)</li>
+      <li>Retention монтаж: часті зміни кадру/плану</li>
+      <li>TikTok subtitles стиль: великі, контрастні, читабельні</li>
+      <li>Рекламна структура: Problem → Solution → Proof → CTA</li>
+      <li>Темп: музика, SFX, паузи</li>
+    </ul>
+    <p class="hint"><strong>Результат блоку:</strong> 5 рекламних роликів для різних ніш.</p>
+
+    <div class="row">
+      <a class="btn" href="#block3">Далі → Блок 3</a>
+      <a class="btn" href="#block1">← Назад</a>
+    </div>
+
+    <div class="links">
+      <h3>Посилання та нотатки (додасте сюди)</h3>
+      <div class="linkitem">🔗 Приклади сильних Hook — (вставити)</div>
+      <div class="linkitem">📝 Формула реклами (Problem→Solution→CTA) — (вставити)</div>
+    </div>
+  </div>
+
+  <!-- BLOCK 3 -->
+  <div id="block3" class="section anchor">
+    <h2>БЛОК 3 — AI Продакшн</h2>
+    <div class="note">
+      AI — ваша фішка. Але важливо: AI не заміняє монтаж, він підсилює результат.
+    </div>
+    <ul class="checklist">
+      <li>Image → Video (Runway/Pika/інше)</li>
+      <li>Voiceover (наприклад ElevenLabs) + чистка</li>
+      <li>UGC-стиль (ніби знято телефоном)</li>
+      <li>AI ролик повного циклу: сценарій → генерація → монтаж → експорт</li>
+    </ul>
+    <p class="hint"><strong>Результат блоку:</strong> 5 AI кейсів (кожен — “під бізнес”).</p>
+
+    <div class="row">
+      <a class="btn" href="#block4">Далі → Блок 4</a>
+      <a class="btn" href="#block2">← Назад</a>
+    </div>
+
+    <div class="links">
+      <h3>Посилання та нотатки (додасте сюди)</h3>
+      <div class="linkitem">🔗 Ваші промпти / пайплайн — (вставити)</div>
+      <div class="linkitem">📝 Чекліст “AI ролик під рекламу” — (вставити)</div>
+    </div>
+  </div>
+
+  <!-- BLOCK 4 -->
+  <div id="block4" class="section anchor">
+    <h2>БЛОК 4 — Звук + Color <span class="badge">База</span></h2>
+    <div class="note">
+      Звук = якість. Якщо звук чистий — ви виглядаєте дорожче. Color беремо базово, без “кіношного” фанатизму.
+    </div>
+    <ul class="checklist">
+      <li>Voice Isolation / Noise reduction</li>
+      <li>Equalizer (прибрати бубніння/сибілянти)</li>
+      <li>Dynamics/Compressor (рівний голос)</li>
+      <li>AutoDucking (музика під голос)</li>
+      <li>Базовий Color: контраст/сатурація + skintone</li>
+    </ul>
+
+    <div class="row">
+      <a class="btn" href="#block5">Далі → Блок 5</a>
+      <a class="btn" href="#block3">← Назад</a>
+    </div>
+
+    <div class="links">
+      <h3>Посилання та нотатки (додасте сюди)</h3>
+      <div class="linkitem">🔗 Пресет “Voice Chain” (EQ+Comp) — (вставити)</div>
+      <div class="linkitem">📝 Пам’ятка гучності: голос/музика — (вставити)</div>
+    </div>
+  </div>
+
+  <!-- BLOCK 5 -->
+  <div id="block5" class="section anchor">
+    <h2>БЛОК 5 — Портфоліо → робота</h2>
+    <div class="note">
+      Тут ви “пакуєтесь” як спеціаліст. Портфоліо = швидкий доказ ваших навичок.
+    </div>
+    <ul class="checklist">
+      <li>Showreel 45–60 сек (найкращі моменти)</li>
+      <li>10–15 робіт у 3 категоріях: Ads / UGC / AI Ads</li>
+      <li>3 кейси “Було/Стало” (задача → рішення → результат)</li>
+      <li>CV + LinkedIn + шаблон повідомлення</li>
+    </ul>
+
+    <div class="row">
+      <a class="btn" href="#block1">← Назад до Блоку 1</a>
+      <a class="btn" href="#rules">↑ До правил</a>
+    </div>
+
+    <div class="links">
+      <h3>Посилання та нотатки (додасте сюди)</h3>
+      <div class="linkitem">🔗 Ваш портфоліо-диск / папка з експортами — (вставити)</div>
+      <div class="linkitem">📝 Шаблон опису кейса — (вставити)</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    AI Video Family Production Plan • 2026
+  </div>
+
+</div>
+</body>
+</html>
