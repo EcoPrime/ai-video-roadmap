@@ -32,6 +32,7 @@
     display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;
   }
   .nav-left{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+  .nav-right{display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
   .nav a{
     color:var(--text);
     text-decoration:none;
@@ -42,6 +43,12 @@
     opacity:0.95;
   }
   .nav a:hover{border-color:var(--accent); color:var(--accent);}
+
+  .pill{
+    border:1px solid var(--accent2) !important;
+  }
+  .pill:hover{border-color:var(--accent) !important; color:var(--accent) !important;}
+
   h1{margin:12px 0 6px; color:var(--accent);}
   .subtitle{color:var(--muted); margin:0 0 18px;}
   .grid{
@@ -113,7 +120,7 @@
     opacity:0.7;
     margin:28px 0 10px;
   }
-  .anchor{scroll-margin-top:90px;}
+  .anchor{scroll-margin-top:110px;}
 </style>
 </head>
 
@@ -124,13 +131,18 @@
   <div class="topbar">
     <div class="nav">
       <div class="nav-left">
+        <a class="pill" href="roadmap.html">📄 Roadmap</a>
+        <a class="pill" href="tz.html">🧾 ТЗ</a>
+
         <a href="#block1">Блок 1: База</a>
         <a href="#block2">Блок 2: Short-form</a>
         <a href="#block3">Блок 3: AI</a>
         <a href="#block4">Блок 4: Звук+Color</a>
         <a href="#block5">Блок 5: Портфоліо</a>
+        <a href="#block6">Блок 6: ТОП AI</a>
       </div>
       <div class="nav-right">
+        <a href="index.html">🏠 Головна</a>
         <a href="#rules">Правила</a>
       </div>
     </div>
@@ -279,7 +291,7 @@
     </ul>
 
     <div class="row">
-      <a class="btn" href="#block1">← Назад до Блоку 1</a>
+      <a class="btn" href="#block6">Далі → Блок 6</a>
       <a class="btn" href="#rules">↑ До правил</a>
     </div>
 
@@ -287,6 +299,26 @@
       <h3>Посилання та нотатки (додасте сюди)</h3>
       <div class="linkitem">🔗 Ваш портфоліо-диск / папка з експортами — (вставити)</div>
       <div class="linkitem">📝 Шаблон опису кейса — (вставити)</div>
+    </div>
+  </div>
+
+  <!-- BLOCK 6 (summary link) -->
+  <div id="block6" class="section anchor">
+    <h2>БЛОК 6 — ТОП AI інструменти (по задачах)</h2>
+    <div class="note">
+      Це не “урок”. Це довідник: який AI інструмент під яку задачу (зараз + на майбутнє).
+    </div>
+    <ul class="checklist">
+      <li>Озвучка (TTS): ElevenLabs / PlayHT / Descript</li>
+      <li>Музика: Suno / Udio / Soundraw</li>
+      <li>Text→Video / Image→Video: Runway / Pika / Kling / Hailuo / Luma</li>
+      <li>Research: Sora / Veo (preview, watermark ок)</li>
+      <li>Якість: Topaz / DaVinci / HandBrake</li>
+    </ul>
+
+    <div class="row">
+      <a class="btn" href="block6.html">Відкрити Block 6 →</a>
+      <a class="btn" href="tz.html">Перейти до ТЗ →</a>
     </div>
   </div>
 
