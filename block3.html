@@ -5,6 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Блок 3 — AI Продакшн</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+.searchgrid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+.searchcard{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:12px;
+  border-radius:12px;
+}
+.searchcard b{ color:#00ffcc; }
+.searchrow{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.ytbtn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#00ffcc;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+.ytbtn:hover{ background:#fff; }
+.kws{
+  margin-top:8px;
+  opacity:0.85;
+  font-size:14px;
+  line-height:1.35;
+}
+.smallhint{ opacity:0.75; font-size:14px; margin-top:6px; }
+</style>
 </head>
 
 <body>
@@ -22,12 +61,12 @@
 <h1>БЛОК 3 — AI Продакшн</h1>
 
 <div class="section">
-       <h1>
-            <a class="smallbtn" href="https://www.youtube.com/watch?v=58fc2v__VWU" target="_blank">▶ УКРОК 2  <br>  Як правильно монтувати відео
+  <h1>
+    <a class="smallbtn" href="https://www.youtube.com/results?search_query=AI+video+pipeline+short+form+ads+9%3A16+script+to+video" target="_blank">
+      ▶ УКРОК 3 <br> AI pipeline: Script → Assets → Edit → Export (пошук)
+    </a>
+  </h1>
 
-</a>
-
-    </h1>
 <h2>🎯 Ціль</h2>
 <p>
 Навчитися робити AI-відео “під бізнес”, де AI — це інструмент, а не самоціль.
@@ -45,6 +84,100 @@
 <li>Підбір музики + SFX під ритм</li>
 <li>Збір “proof”: текст/скрін/інфографіка (без перебору)</li>
 </ul>
+</div>
+
+<!-- YOUTUBE SEARCH SYSTEM -->
+<div class="section">
+<h2>🔎 Що вводити в YouTube (AI продакшн)</h2>
+<p class="smallhint">
+Клікни кнопку — відкриється YouTube пошук. Шукай відео з реальними прикладами “зробив ролик від А до Я”.
+</p>
+
+<div class="searchgrid">
+
+  <div class="searchcard">
+    <b>1) AI Video Pipeline (від сценарію до експорту)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=AI+video+pipeline+short+form+ads+script+to+video">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=AI+video+production+workflow+script+assets+edit+export">EN</a>
+    </div>
+    <div class="kws">Пошук: <code>AI video pipeline short form ads</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>2) Runway Gen-3 / Runway image-to-video tutorial</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=Runway+Gen-3+tutorial+image+to+video+prompt">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=Runway+Gen-3+short+form+ads+workflow">Ads</a>
+    </div>
+    <div class="kws">Пошук: <code>Runway Gen-3 tutorial image to video</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>3) Pika tutorial (image-to-video + effects + extend)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=Pika+AI+tutorial+image+to+video+extend+effects">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=Pika+AI+short+form+workflow">EN</a>
+    </div>
+    <div class="kws">Пошук: <code>Pika AI tutorial image to video extend</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>4) UGC style (реклама “ніби знято телефоном”)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=UGC+ad+editing+style+problem+solution+CTA">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=UGC+style+ads+examples+hooks+retention">Hooks</a>
+    </div>
+    <div class="kws">Пошук: <code>UGC ad editing style problem solution CTA</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>5) ElevenLabs voiceover + cleanup (clean voice)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=ElevenLabs+voiceover+tutorial+clean+voice+noise+reduction">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=DaVinci+Resolve+voiceover+clean+audio+noise+reduction">DaVinci</a>
+    </div>
+    <div class="kws">Пошук: <code>ElevenLabs voiceover tutorial clean voice</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>6) Music + SFX sync під ритм (short-form)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=short+form+editing+music+sync+sfx+sound+design">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=DaVinci+Resolve+sound+design+sfx+music+sync">DaVinci</a>
+    </div>
+    <div class="kws">Пошук: <code>short form editing music sync SFX sound design</code></div>
+  </div>
+
+  <div class="searchcard">
+    <b>7) Proof в рекламі (скріни/текст/інфографіка, без перебору)</b>
+    <div class="searchrow">
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=short+form+ads+proof+editing+text+overlays+before+after">🔎 YouTube</a>
+      <a class="ytbtn" target="_blank"
+        href="https://www.youtube.com/results?search_query=performance+ad+editing+proof+overlays+case+study">EN</a>
+    </div>
+    <div class="kws">Пошук: <code>short form ads proof editing text overlays</code></div>
+  </div>
+
+</div>
+
+<div class="note" style="margin-top:12px;">
+<b>Правило:</b> 1 туторіал → одразу 1 ролик. Не “подивився 10 відео і нічого не зробив”.
+</div>
+
 </div>
 
 <div class="section">
@@ -146,9 +279,7 @@ function toggle(id){
 function copyText(id){
   const el = document.getElementById(id);
   const text = el.innerText;
-  navigator.clipboard.writeText(text).then(()=>{
-    alert("Промпт скопійовано ✅");
-  });
+  navigator.clipboard.writeText(text).then(()=>{ alert("Промпт скопійовано ✅"); });
 }
 </script>
 
