@@ -5,13 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Блок 2 — Short-form Спеціалізація</title>
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+.searchgrid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+.searchcard{
+  background:#111;
+  border:1px solid #2a2a2a;
+  padding:12px;
+  border-radius:12px;
+}
+.searchcard b{ color:#00ffcc; }
+.searchrow{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.ytbtn{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:10px;
+  background:#00ffcc;
+  color:#000;
+  text-decoration:none;
+  font-weight:bold;
+}
+.ytbtn:hover{ background:#fff; }
+.kws{
+  margin-top:8px;
+  opacity:0.85;
+  font-size:14px;
+  line-height:1.35;
+}
+.smallhint{ opacity:0.75; font-size:14px; margin-top:6px; }
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- TOP MENU -->
 <div style="margin-bottom: 25px;">
     <a class="button" href="index.html">🏠 Головна</a>
     <a class="button" href="roadmap.html">📄 Повний Roadmap</a>
@@ -22,12 +60,6 @@
 <h1>БЛОК 2 — Short-form Спеціалізація</h1>
 
 <div class="section">
-     <h1>
-            <a class="smallbtn" href="https://www.youtube.com/watch?v=58fc2v__VWU" target="_blank">▶ УКРОК 2  <br>  Як правильно монтувати відео
-
-</a>
-
-    </h1>
 <h2>🎯 Ціль</h2>
 <p>
 Навчитися робити відео, яке утримує увагу та виглядає як сучасний short-form контент.
@@ -47,6 +79,89 @@
 </ul>
 </div>
 
+<!-- YOUTUBE SEARCH SYSTEM -->
+<div class="section">
+<h2>🔎 Що вводити в YouTube</h2>
+<p class="smallhint">
+Обирай відео з прикладами реального монтажу, бажано до 20 хв та з таймкодами.
+</p>
+
+<div class="searchgrid">
+
+<div class="searchcard">
+<b>Hook (перші 2 секунди)</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=short+form+hook+examples+reels+tiktok">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>short form hook examples reels</code>
+</div>
+</div>
+
+<div class="searchcard">
+<b>Jump Cuts монтаж</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=DaVinci+Resolve+jump+cuts+short+form">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>DaVinci Resolve jump cuts short form</code>
+</div>
+</div>
+
+<div class="searchcard">
+<b>Retention монтаж</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=short+form+retention+editing+techniques">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>short form retention editing techniques</code>
+</div>
+</div>
+
+<div class="searchcard">
+<b>TikTok субтитри</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=DaVinci+Resolve+tiktok+style+subtitles">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>DaVinci Resolve tiktok style subtitles</code>
+</div>
+</div>
+
+<div class="searchcard">
+<b>Реклама: Problem → Solution → CTA</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=short+form+ad+structure+problem+solution+cta">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>short form ad structure problem solution CTA</code>
+</div>
+</div>
+
+<div class="searchcard">
+<b>Ритм + музика + SFX</b>
+<div class="searchrow">
+<a class="ytbtn" target="_blank"
+href="https://www.youtube.com/results?search_query=short+form+editing+music+sync+sfx">🔎 YouTube</a>
+</div>
+<div class="kws">
+Пошук: <code>short form editing music sync SFX</code>
+</div>
+</div>
+
+</div>
+
+<div class="note" style="margin-top:12px;">
+📌 Не дивись 10 відео. Подивись 1 — і одразу зроби тестовий ролик.
+</div>
+
+</div>
+
 <div class="section">
 <h2>📌 Практичні завдання</h2>
 <ul>
@@ -54,53 +169,6 @@
 <li>Зробити 1 рекламний ролик (Problem → Solution → CTA)</li>
 <li>Зробити 1 UGC-стиль відео</li>
 </ul>
-</div>
-
-<!-- GPT HELPER -->
-<div class="section">
-<h2>🤖 GPT-помічник (Hooks & Ads)</h2>
-
-<p style="opacity:0.8; margin-top:0;">
-Тут GPT допомагає придумувати hook, структуру реклами та субтитри.
-</p>
-
-<button class="button" onclick="toggle('gpt2')">Показати пораду</button>
-
-<div id="gpt2" style="display:none; margin-top:15px; background:#111; border:1px solid #2a2a2a; padding:15px; border-radius:12px;">
-
-  <div style="color:#00ffcc; font-weight:bold; margin-bottom:10px;">
-    Якщо не знаєш, як зробити відео цікавішим:
-  </div>
-
-  <div style="opacity:0.9;">
-    1) Спочатку думай не “як красиво змонтувати”, а “що зацікавить людину”.<br>
-    2) Формула: сильний біль → рішення → доказ → CTA.<br>
-    3) Перша фраза = найважливіша частина всього відео.
-  </div>
-
-  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
-    <button class="smallbtn" onclick="copyText('prompt2')">📋 Скопіювати промпт</button>
-    <a class="smallbtn" href="https://chat.openai.com/" target="_blank">🔗 Відкрити ChatGPT</a>
-    <a class="smallbtn" href="#" target="_blank">▶ Урок (додаси посилання)</a>
-  </div>
-
-  <pre id="prompt2" style="white-space:pre-wrap; background:#0d0d0d; border:1px solid #2a2a2a; padding:12px; border-radius:12px; margin:12px 0 0;">
-Ти — експерт з short-form реклами (TikTok / Reels).
-
-Ніша:
-Цільова аудиторія:
-Продукт / послуга:
-
-Зроби:
-1) 5 потужних hook (до 10 слів)
-2) Повний сценарій до 30 сек (Problem → Solution → Proof → CTA)
-3) Текст субтитрів (динамічний стиль)
-4) Ідею монтажу (де різати, коли змінювати кадр)
-
-Коротко, чітко, без води.
-  </pre>
-
-</div>
 </div>
 
 <div class="section">
@@ -112,7 +180,7 @@
 </div>
 
 <div style="margin-top:30px;">
-    <a class="button" href="index.html">← Назад на головну</a>
+<a class="button" href="index.html">← Назад на головну</a>
 </div>
 
 <div class="footer">
@@ -120,20 +188,6 @@ AI Video Roadmap • 2026
 </div>
 
 </div>
-
-<script>
-function toggle(id){
-  const el = document.getElementById(id);
-  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
-}
-function copyText(id){
-  const el = document.getElementById(id);
-  const text = el.innerText;
-  navigator.clipboard.writeText(text).then(()=>{
-    alert("Промпт скопійовано ✅");
-  });
-}
-</script>
 
 </body>
 </html>
